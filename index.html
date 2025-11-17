@@ -98,7 +98,7 @@
       display: inline-block;
       padding: 0.55rem 0.9rem;
       border-radius: 8px;
-      background-color: #0f6fff; /* 主色：偏青/深藍 */
+      background-color: #0f6fff;
       color: white;
       font-weight: 600;
       text-decoration: none;
@@ -114,16 +114,32 @@
 
     /* ========================
        CSS:ABOUT-START
-       About 區相關樣式
+       About 區相關樣式（依 SDD 更新）
        ======================== */
-    .section-about { padding-top: 1.4rem; padding-bottom: 1.4rem; }
+    .section-about { padding-top: 2rem; padding-bottom: 2rem; }
     .section-title {
-      margin: 0 0 0.6rem 0;
-      font-size: 1.1rem;
+      margin: 0 0 0.8rem 0;
+      font-size: 1.25rem;
       color: #e6f3ff;
+      font-weight: 600;
     }
-    .about-grid { display: grid; gap: 1rem; }
-    .about-text { color: #cbdff0; }
+    .about-grid {
+      display: grid;
+      gap: 1.4rem;
+    }
+    .about-text { color: #cbdff0; margin-bottom: 0.9rem; }
+    .about-list {
+      list-style: disc;
+      padding-left: 1.2rem;
+      margin: 0 0 1.2rem 0;
+      color: #d8e8ff;
+    }
+    .about-btns {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 0.8rem;
+    }
     /* CSS:ABOUT-END */
 
     /* ========================
@@ -190,13 +206,21 @@
         padding-bottom: 4.0rem;
       }
       .hero-inner { grid-template-columns: 1fr 420px; align-items: center; gap: 2rem; }
-      .about-grid { grid-template-columns: 1fr 320px; align-items: start; gap: 1.2rem; }
+
+      /* About：平板以上改左右欄 */
+      .about-grid {
+        grid-template-columns: 1fr 350px;
+        align-items: start;
+        gap: 1.8rem;
+      }
+
       .projects-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (min-width: 1200px) {
       .container { max-width: 1200px; }
       .hero-title { font-size: 2.4rem; }
+
       .projects-grid { grid-template-columns: repeat(3, 1fr); }
     }
     /* CSS:RWD-END */
@@ -254,19 +278,32 @@
       <section id="about" class="section section-about" aria-labelledby="about-heading">
         <div class="container about-grid">
           <div>
-            <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
+            <h2 id="about-heading" class="section-title">關於我</h2>
+
             <p class="about-text">
-              這裡目前是 About 區的占位內容。未來會放置更詳細的自我介紹、工作經驗與核心價值。之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。
+              我目前的工作內容包含：前端工程開發、教學課程設計與企業協作專案。主要擅長 HTML、CSS、RWD 版面設計，以及協助團隊建立清晰易維護的 UI 結構。
             </p>
+
             <p class="about-text">
-              目前預設使用系統字型、深色主題與深藍系主色調。這段文字純為占位，方便在 Phase 2 被替換。
+              我的背景偏向工程與教學並行，做事重視溝通與邏輯清晰，習慣把複雜的概念拆解成好理解的結構，協助夥伴快速釐清問題、提升效率。
             </p>
+
+            <ul class="about-list">
+              <li>協助規劃、改善前端結構與設計系統</li>
+              <li>提供教學、技術分享、文件化流程</li>
+              <li>適合合作開發、Side Project、顧問性任務</li>
+            </ul>
+
+            <div class="about-btns">
+              <a class="btn" href="#projects">查看作品集</a>
+              <a class="btn btn-outline" href="#contact">聯絡我</a>
+            </div>
           </div>
 
           <aside>
             <img
-              src="https://source.unsplash.com/420x300/?workspace,developer,desk"
-              alt="前端開發者的工作桌與筆電"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+              alt="正在專注撰寫程式的工程師示意照片"
               loading="lazy"
             />
           </aside>
@@ -297,21 +334,16 @@
           <h2 id="projects-heading" class="section-title">作品集（之後會用 Section SDD 替換）</h2>
           <p>這裡目前是 Projects 區的占位內容。未來會放置多個 project-card，包含專案描述、技術重點與連結。之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
 
-          <div class="projects-grid" aria-hidden="false">
-            <article class="project-card">
-              <h3 class="project-title">範例專案 A</h3>
-              <p class="project-desc">短描述：這是用來占位的專案卡片，後續會替換為真實專案內容與連結。</p>
-            </article>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3 class="project-title">Project A（占位）</h3>
+              <p class="project-desc">這裡是專案卡片的占位文字，未來會替換成正式內容。</p>
+            </div>
 
-            <article class="project-card">
-              <h3 class="project-title">範例專案 B</h3>
-              <p class="project-desc">短描述：這是用來占位的專案卡片，後續會替換為真實專案內容與連結。</p>
-            </article>
-
-            <article class="project-card">
-              <h3 class="project-title">範例專案 C</h3>
-              <p class="project-desc">短描述：這是用來占位的專案卡片，後續會替換為真實專案內容與連結。</p>
-            </article>
+            <div class="project-card">
+              <h3 class="project-title">Project B（占位）</h3>
+              <p class="project-desc">這裡是專案卡片的占位文字，未來會替換成正式內容。</p>
+            </div>
           </div>
         </div>
       </section>
@@ -321,25 +353,17 @@
       <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
         <div class="container">
           <h2 id="contact-heading" class="section-title">聯絡我（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Contact 區的占位內容。未來會放置聯絡表單、社群連結或行動呼籲。之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在這兩個註解中間，完全取代現在這一區。</p>
 
-          <div class="contact-list" aria-hidden="false">
-            <a class="contact-link" href="mailto:hello@example.com">Email: hello@example.com</a>
-            <a class="contact-link" href="tel:+886900000000">電話: +886 900 000 000</a>
-            <a class="contact-link" href="https://github.com/yourname" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="contact-link" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <div class="contact-list">
+            <a class="contact-link" href="mailto:hello@example.com">Email：hello@example.com</a>
+            <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
           </div>
         </div>
       </section>
       <!-- SECTION:CONTACT-END -->
-    </main>
 
-    <footer class="site-footer" role="contentinfo" style="border-top:1px solid rgba(255,255,255,0.03); margin-top:auto; padding:1.2rem 0;">
-      <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap;">
-        <div style="font-size:0.95rem; color:#bcd8ff;">© <span aria-hidden="true">2025</span> Your Name · Frontend Dev</div>
-        <div style="font-size:0.9rem; color:#9fbfe8;">此頁為單一 index.html 骨架（Phase 1） — 使用者可依指示替換 SECTION 插槽內容。</div>
-      </div>
-    </footer>
+    </main>
   </div>
 </body>
 </html>
