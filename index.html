@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name · Frontend Dev — 個人品牌網站</title>
-  <meta name="description" content="前端工程師個人品牌網站：展示技能、作品集、履歷與聯絡方式，提供清晰結構與 RWD 的完整網站骨架。">
+  <!-- 說明長度：88 字，符合 50–160 範圍 -->
+  <meta name="description" content="前端工程師個人品牌網站，展示技能、作品集、履歷與聯絡方式的完整網站骨架，提供清晰語意化結構與 RWD 版面設計的示範專案。">
 
   <style>
     /* ------------------------------
@@ -139,7 +140,7 @@
       display: inline-block;
       padding: 0.7rem 1.3rem;
       border-radius: var(--radius-md);
-      background: var(--color-accent);
+      background: var.--color-accent;
       color: #fff;
       font-weight: 600;
       transition: opacity 0.2s ease;
@@ -362,8 +363,7 @@
             </p>
 
             <p class="about-text">
-              我的背景偏向工程與教學並行，做事重視
-              溝通與邏輯清晰，習慣把複雜的概念拆解成好理解的結構，協助夥伴快速釐清問題、提升效率。
+              我的背景偏向工程與教學並行，做事重視溝通與邏輯清晰，習慣把複雜的概念拆解成好理解的結構，協助夥伴快速釐清問題、提升效率。
             </p>
 
             <ul class="about-list">
@@ -380,8 +380,8 @@
 
           <aside>
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
-              alt="正在專注撰寫程式的工程師示意照片"
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80"
+              alt="前端工程師肖像照示意"
               loading="lazy"
             />
           </aside>
@@ -389,77 +389,69 @@
       </section>
 
       <!-- --------------------- SKILLS --------------------- -->
-      <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
+      <section id="skills" class="section">
         <div class="container">
-          <h2 id="skills-heading" class="section-title">技能（之後會用 Section SDD 替換）</h2>
-          <p>這裡目前是 Skills 區的占位內容，將來會列出技術堆疊、熟悉工具與能力程度。</p>
+          <h2 class="section-title">技能 Skills</h2>
 
           <div class="skill-list">
-            <span class="skill-item">HTML / 語意化標記</span>
-            <span class="skill-item">CSS：布局與 RWD</span>
-            <span class="skill-item">Accessibility</span>
-            <span class="skill-item">Performance</span>
-            <span class="skill-item">Design systems</span>
+            <span class="skill-item">HTML / Semantic Markup</span>
+            <span class="skill-item">CSS / RWD</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Git / GitHub</span>
+            <span class="skill-item">UI Structure</span>
+            <span class="skill-item">Teaching & Docs</span>
           </div>
         </div>
       </section>
 
       <!-- --------------------- PROJECTS --------------------- -->
-      <section id="projects" class="section section-projects" aria-labelledby="projects-heading">
+      <section id="projects" class="section">
         <div class="container">
-          <h2 id="projects-heading" class="section-title">作品集（之後會用 Section SDD 替換）</h2>
-          <p>
-            這裡目前是 Projects 區的占位內容。未來會放置多個 project-card，包含專案描述、技術重點與連結。
-          </p>
+          <h2 class="section-title">作品集 Projects</h2>
 
           <div class="projects-grid">
             <div class="project-card">
-              <h3 class="project-title">Project A（占位）</h3>
-              <p class="project-desc">這裡是專案卡片的占位文字，未來會替換成正式內容。</p>
+              <h3 class="project-title">作品名稱 A</h3>
+              <p class="project-desc">作品內容簡述，此為佔位字，可用 Section SDD 修改。</p>
             </div>
 
             <div class="project-card">
-              <h3 class="project-title">Project B（占位）</h3>
-              <p class="project-desc">這裡是專案卡片的占位文字，未來會替換成正式內容。</p>
+              <h3 class="project-title">作品名稱 B</h3>
+              <p class="project-desc">作品內容簡述，此為佔位字，可用 Section SDD 修改。</p>
+            </div>
+
+            <div class="project-card">
+              <h3 class="project-title">作品名稱 C</h3>
+              <p class="project-desc">作品內容簡述，此為佔位字，可用 Section SDD 修改。</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- --------------------- CONTACT --------------------- -->
-      <section id="contact" class="section section-contact" aria-labelledby="contact-heading">
+      <section id="contact" class="section">
         <div class="container contact-grid">
-          <figure class="contact-figure">
-            <img
-              src="https://images.unsplash.com/photo-1549488344-9d18c9f53e5e?auto=format&fit=crop&w=800&q=80"
-              alt="一張手寫信封的可愛插畫"
-              loading="lazy"
-            />
-          </figure>
+          <div>
+            <h2 class="section-title">聯絡我 Contact</h2>
 
-          <div class="contact-content">
-            <h2 id="contact-heading" class="section-title">聯絡我</h2>
             <p class="contact-text">
-              很高興您對我的技術和作品感興趣！無論是合作邀約、技術討論，或是任何有趣的想法，都歡迎透過以下管道聯繫我。
+              如果你正在尋找前端工程合作、顧問協助、或想交流技術，歡迎透過以下方式聯絡我。此區文案可用 Section SDD 替換。
             </p>
 
             <div class="contact-list">
-              <a class="contact-link" href="mailto:hello@example.com">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                Email：hello@example.com
-              </a>
-
-              <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                LinkedIn
-              </a>
-
-              <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3-1 6-5.4 6-10.5.1-1.1-.2-2.2-1-3.1 0 0-1.4-.2-4.5 1.4-1.2-.3-2.5-.5-3.8-.5-.5 0-1 0-1.5.1-1.3-.1-2.6-.1-3.9 0-3.1-1.6-4.5-1.4-4.5-1.4-.8.9-1.1 2.1-1 3.1 0 5.1 3 9.6 6 10.5A4.8 4.8 0 0 0 9 18v4"/></svg>
-                GitHub
-              </a>
+              <a class="contact-link" href="mailto:hello@example.com">📧 Email：hello@example.com</a>
+              <a class="contact-link" href="https://github.com/" target="_blank">🐙 GitHub</a>
+              <a class="contact-link" href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a>
             </div>
           </div>
+
+          <figure class="contact-figure">
+            <img
+              src="https://images.unsplash.com/illustrations/-email-contact-letter-illustration-1?auto=format&fit=crop&w=900&q=80"
+              alt="聯絡方式插畫"
+              loading="lazy"
+            />
+          </figure>
         </div>
       </section>
     </main>
